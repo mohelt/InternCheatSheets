@@ -59,6 +59,21 @@ Then you will see a menu showing the 4 commits with the word pick before them:
 
 Pick means you want the commit to remain. Squash means you want the changes in the commit to be melded to the first commit above it with the word pick before it.
 
+## Pulling PRs Locally ##
+
+Sometimes you may need to test a change in a PR (ie. during PR review). The following alias can be added to `~/.gitconfig`:
+
+```bash
+[alias]
+copr = "!f() { git fetch $1 pull/$2/head:PR${2}; git checkout PR${2};}; f"
+```
+Now you can use the upstream remote and the PR number to copr (checkout PR :)).
+
+```
+$ git copr upstream 1912
+```
+
+Credits go to Dusty Mabe for showing me this.
 #### References ####
 https://docs.google.com/document/d/156sIos7H2h0-rOn1C36SBTn-emfQN4UKqvSi8XMlQBk/edit
 
