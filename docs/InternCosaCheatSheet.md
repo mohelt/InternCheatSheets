@@ -2,13 +2,16 @@
 
 ## Key Terms ##
 ## .bashrc ##
-.bashrc is a shell script that Bash runs when a user logs in. It contains a bunch of configuratiosn for the terminal session (command aliases, coloring, completion, shell history).
+.bashrc is a shell script that Bash runs when a user logs in. It contains a bunch of configurations for the terminal session (command aliases, coloring, completion and shell history).
 
 ## podman ##
 Podman is a open source container engine developed by RedHat.
 
-#Add a bash alias / edit .bashrc#
+### Add a bash alias / edit .bashrc ###
+
+```
 nano /home/YourUsernameHere/.bashrc
+```
 
 ## Useful bash alias: ##
 
@@ -45,7 +48,9 @@ cosa() {
 https://coreos.github.io/coreos-assembler/building-fcos/
 
 ## Common Errors ##
+```
 Error: error creating container storage: the container name "cosa" is already in use by "694975cfc9765382a8977337a8186b2f854dab171170e80be6ea484d44622e96". You have to remove that container to be able to reuse that name.: that name is already in use.
+```
 
 Make sure to always keep the container at the latest version to prevent errors using:
 
