@@ -3,16 +3,16 @@
 ## Terminology ##
 
 Key words to know:
-Branch, Clone, Fetch, Fork, HEad, Merge, Origin, Pull Request, Push, Rebase, Upstream
+Branch, Clone, Fetch, Fork, Head, Merge, Origin, Pull Request, Push, Rebase, Upstream
 
 (https://acloudguru.com/blog/engineering/git-terms-explained)
 
 
 
 ## Useful Habits ##
-Commit Early, Commit Often.
+Commit **Early**, Commit **Often**.
 
-Commit often, Perfect Later.
+Commit **Often**, Perfect **Later**.
 
 Follow good git commit message rules (https://github.com/erlang/otp/wiki/writing-good-commit-messages). In summary, first line 50 characters max in imperative language. Skip a line then more detailed explanation in imperative language.
 
