@@ -119,6 +119,8 @@ podman pull quay.io/coreos-assembler/coreos-assembler:latestpodman pull quay.io/
 ## Creating new Kola Test ##
 Create a file in src/config/tests/kola. Create the file and make sure it has no extension. Use "chmod a=x testname" to add correct permissions.
 
+You can also write a test that is compiled in Kola (ie. written in Go). In general opt for the first option (an external test) if possible, but if more complexity is needed, a test compiled in Kola is a good option.
+
 ## Running Kola Tests ##
 https://coreos.github.io/coreos-assembler/kola/
 
